@@ -20,7 +20,7 @@ const Navbar = () => {
               className={`px-3 cursor-pointer ${
                 isActive("/")
                   ? "text-amber-500 text-opacity-70"
-                  : "hover:text-amber-500"
+                  : "hover:text-amber-500 "
               }`}
             >
               <Link href="/">Home</Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
             >
               <Link href="/contact">Contact</Link>
             </li>
-            <li className="pl-6 pr-6 flex text-center items-center justify-center bg-amber-500 bg-opacity-70 h-10 cursor-pointer hover:scale-105 transition duration-100">
+            <li className="pl-6 pr-6 flex text-center items-center justify-center bg-amber-500 h-10 cursor-pointer hover:scale-105 transition duration-100">
               Login
             </li>
           </ul>
