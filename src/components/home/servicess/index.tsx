@@ -3,7 +3,11 @@ import Image from "next/image";
 const Services = () => {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen mb-28">
-      <div className="w-5/6 pr-8 flex flex-col text-center mb-20">
+      <div
+        className="w-5/6 pr-8 flex flex-col text-center mb-20"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h2 className="text-sm uppercase text-amber-500">Our Services</h2>
         <h1 className="text-4xl font-bold mt-2">
           Comprehensive Business Management Solutions
@@ -15,7 +19,11 @@ const Services = () => {
           insights to support decision-making and operational efficiency.
         </p>
       </div>
-      <div className="lg:w-1/2 grid grid-cols-1 gap-6 justify-center">
+      <div
+        className="lg:w-1/2 grid grid-cols-1 gap-6 justify-center"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
         <div className="flex space-x-4 justify-center items-center w-full">
           <div className="w-[200px] h-[150px] overflow-hidden">
             <Image
@@ -36,7 +44,11 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="flex space-x-4  justify-center items-center w-full">
+        <div
+          className="flex space-x-4  justify-center items-center w-full"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div className="w-[200px] h-[150px] overflow-hidden">
             <Image
               src="/home/bgjumbo.jpg"
@@ -55,7 +67,11 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="flex space-x-4  justify-center items-center w-full">
+        <div
+          className="flex space-x-4  justify-center items-center w-full"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div className="w-[200px] h-[150px] overflow-hidden">
             <Image
               src="/home/purchase.jpg"
@@ -76,8 +92,8 @@ const Services = () => {
         </div>
       </div>
       <a
-        href="#consultation"
-        className="bg-amber-500 text-white py-3 px-6 my-8 hover:bg-orange-600 transition"
+        href="/services"
+        className="bg-amber-500 text-white py-3 px-6 my-8 rounded-full hover:bg-orange-600 transition"
       >
         Read More
       </a>

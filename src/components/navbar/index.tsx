@@ -1,16 +1,38 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
 
   const isActive = (path: string) => router.pathname === path;
 
+  const handleScroll = () => {
+    if (window.scrollY > window.innerHeight / 2) {
+      // 100vh bagi 2 = 50vh
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-      <nav className="flex w-full justify-between p-10 px-28 text-xl items-center bg-transparent text-white">
+      <nav
+        className={`flex fixed w-full justify-between p-5 px-28 text-xl items-center transition-all duration-300 ${
+          isScrolled ? "bg-black bg-opacity-70" : "bg-transparent"
+        } text-white`}
+      >
         <Link href="/">
-          <div className="title text-3xl font-bold cursor-pointer text-red-500">
+          <div className="title text-3xl font-bold cursor-pointer text-red-500 pridi-regular">
             Pro<span className="text-amber-500">Chain</span>
           </div>
         </Link>
@@ -52,7 +74,7 @@ const Navbar = () => {
             >
               <Link href="/contact">Contact</Link>
             </li>
-            <li className="pl-6 pr-6 flex text-center items-center justify-center bg-amber-500 h-10 cursor-pointer hover:scale-105 transition duration-100">
+            <li className="pl-6 pr-6 flex text-center items-center justify-center rounded-full bg-amber-500 h-10 cursor-pointer hover:scale-105 transition duration-100">
               Login
             </li>
           </ul>

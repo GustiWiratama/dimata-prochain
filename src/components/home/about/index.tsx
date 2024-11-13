@@ -2,7 +2,11 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="about flex p-28 justify-between">
+    <section
+      className="about flex p-28 justify-between"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div className="about flex  justify-center">
         <div className="w-[400px] h-[400px] mr-28 overflow-hidden">
           <Image
@@ -27,8 +31,8 @@ const About = () => {
           connectivity and control.
         </p>
         <a
-          href="#consultation"
-          className="bg-amber-500 text-white py-3 px-6 hover:bg-orange-600 transition"
+          href="/about"
+          className="bg-amber-500 text-white py-3 px-6 rounded-full hover:bg-orange-600 transition"
         >
           Read More
         </a>
