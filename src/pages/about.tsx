@@ -1,5 +1,6 @@
 import Benefit from "@/components/about/benefit";
 import Header from "@/components/about/header";
+import Team from "@/components/about/team/team";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
@@ -27,6 +28,7 @@ export default function About() {
       </div>
       <Header />
       <Benefit />
+      <Team />
       <Footer />
     </div>
   );

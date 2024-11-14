@@ -3,24 +3,24 @@ import Image from "next/image";
 const About = () => {
   return (
     <section
-      className="about flex p-28 justify-between"
+      className="about flex flex-col md:flex-row p-10 md:p-28 justify-between"
       data-aos="fade-up"
       data-aos-duration="1000"
     >
       <div className="about flex  justify-center">
-        <div className="w-[400px] h-[400px] mr-28 overflow-hidden">
+        <div className="w-[200px] h-[200px] md:w-[400px] md:h-[400px]  md:mr-28 overflow-hidden">
           <Image
             src="/home/handshake.jpg"
             alt="service Image"
             width={300}
             height={300}
             quality={100}
-            className="w-[400px] h-[400px] object-cover"
+            className="w-[200px] h-[200px] md:w-[400px] md:h-[400px] object-cover"
             priority
           />
         </div>
       </div>
-      <div className="about-text">
+      <div className="about-text text-center md:text-start">
         <h2 className="font-bold text-[3em] ">Enhancing Operational Synergy</h2>
         <p className="mt-3 mb-12">
           ProChain is a platform where centralized and distributed systems come

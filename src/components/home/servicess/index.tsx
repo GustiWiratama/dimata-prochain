@@ -3,13 +3,9 @@ import Image from "next/image";
 const Services = () => {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen mb-28">
-      <div
-        className="w-5/6 pr-8 flex flex-col text-center mb-20"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
+      <div className="w-5/6 md:pr-8 flex flex-col text-center mt-10 md:mt-0 mb-20">
         <h2 className="text-sm uppercase text-amber-500">Our Services</h2>
-        <h1 className="text-4xl font-bold mt-2">
+        <h1 className="text-2xl  md:text-4xl font-bold mt-2">
           Comprehensive Business Management Solutions
         </h1>
         <p className="text-lg mt-4">
@@ -20,11 +16,11 @@ const Services = () => {
         </p>
       </div>
       <div
-        className="lg:w-1/2 grid grid-cols-1 gap-6 justify-center"
+        className="lg:w-1/2 grid grid-cols-1 gap-6 justify-center p-10 md:p-0"
         data-aos="fade-right"
         data-aos-duration="1000"
       >
-        <div className="flex space-x-4 justify-center items-center w-full">
+        <div className="flex space-x-4 justify-center items-center w-full ">
           <div className="w-[200px] h-[150px] overflow-hidden">
             <Image
               src="/home/sales-management.jpg"
@@ -45,7 +41,7 @@ const Services = () => {
         </div>
 
         <div
-          className="flex space-x-4  justify-center items-center w-full"
+          className="flex space-x-4  justify-center items-center w-full "
           data-aos="fade-right"
           data-aos-duration="1000"
         >

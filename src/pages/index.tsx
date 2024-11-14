@@ -43,7 +43,7 @@ export default function Home() {
           <Navbar />
         </div>
         <div className="relative flex justify-center items-center h-full">
-          <div className="w-[400px] h-[400px] mr-28 mt-14 overflow-hidden">
+          <div className="w-[400px] h-[400px] mr-28 mt-14 overflow-hidden hidden md:flex">
             <Image
               src="/home/prochain-logo.png"
               alt="service Image"
@@ -54,7 +54,7 @@ export default function Home() {
               priority
             />
           </div>
-          <div className=" text-white">
+          <div className=" text-white text-center md:text-start">
             <h1 className="text-4xl font-semibold w-[12em] leading-tight">
               Integrated Process Chain Management System
             </h1>
