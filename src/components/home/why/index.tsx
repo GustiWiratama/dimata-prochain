@@ -1,9 +1,9 @@
 const Why = () => {
   return (
-    <section className="flex flex-col p-20 px-28 bg-gray-200">
-      <div className="title flex justify-between mb-10">
+    <section className="flex flex-col p-10 md:p-20 md:px-28 bg-gray-200">
+      <div className="title flex flex-col md:flex-row justify-between mb-10">
         <h1 className="text-4xl font-bold mt-2">Why Choose ProChain? </h1>
-        <p className="w-1/2 text-end">
+        <p className="mt-3 md:mt-0 md:w-1/2 md:text-end">
           Experience our unmatched expertise and dedication to delivering
           exceptional results, tailored to meet your unique needs.
         </p>

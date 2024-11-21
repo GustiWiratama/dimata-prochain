@@ -32,7 +32,7 @@ const Services = () => {
           </div>
           <div className="w-2/3">
             <h3 className="text-lg font-bold">Sales Management</h3>
-            <p>
+            <p className="text-sm md:text-base">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
@@ -56,7 +56,7 @@ const Services = () => {
           </div>
           <div className="w-2/3">
             <h3 className="text-lg font-bold">Inventory Control & Transfer</h3>
-            <p>
+            <p className="text-sm md:text-base">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.
@@ -79,7 +79,7 @@ const Services = () => {
           </div>
           <div className="w-2/3">
             <h3 className="text-lg font-bold">Purchasing Management</h3>
-            <p>
+            <p className="text-sm md:text-base">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.

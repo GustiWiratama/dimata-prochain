@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-2/3 flex flex-wrap text-start justify-end">
+          <div className="w-full md:w-2/3 hidden md:flex flex-wrap text-start justify-end">
             <div className="w-1/4 mb-8">
               <h3 className="text-xl font-semibold mb-4">Company</h3>
               <ul>

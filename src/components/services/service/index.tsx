@@ -28,7 +28,7 @@ const Service = () => {
   ];
   return (
     <div className="relative">
-      <div className=" relative  mt-40 flex flex-col text-center items-center">
+      <div className=" relative mt-20 flex flex-col text-center items-center">
         <div className="font-bold text-4xl mb-4">
           Innovative solutions for every step forward
         </div>
@@ -38,7 +38,7 @@ const Service = () => {
           4.0 technologies.
         </p>
       </div>
-      <div className="max-w-screen-lg mx-auto p-4 mt-12">
+      <div className="max-w-screen-lg mx-auto p-4 mt-20">
         <div
           className="grid grid-cols-1 sm:grid-cols-2 gap-4"
           data-aos="fade-up"

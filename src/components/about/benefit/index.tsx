@@ -16,8 +16,8 @@ const Benefit = () => {
           functionalities like sales, purchasing, inventory, and financial
           management to provide a holistic solution for your business.
         </p>
-        <div className="flex flex-col px-64 py-10">
-          <div className="flex flex-row">
+        <div className="flex flex-col scale-75 md:scale-100 md:px-64 py-10">
+          <div className="flex flex-col md:flex-row">
             <div className="w-96 h-96 overflow-hidden relative">
               <Image
                 src="/about/data.jpg"
@@ -26,13 +26,13 @@ const Benefit = () => {
                 objectFit="cover"
               />
             </div>
-            <div className="flex items-center p-10 w-2/4">
+            <div className="flex items-center p-10 md:w-2/4">
               With features such as branch support, centralized data control,
               and customizable reporting tools, ProChain enables businesses to
               adapt and grow in a competitive landscape.
             </div>
           </div>
-          <div className="flex flex-row-reverse ">
+          <div className="flex flex-col md:flex-row-reverse ">
             <div className="w-96 h-96 overflow-hidden relative">
               <Image
                 src="/about/team.jpg"
@@ -41,7 +41,7 @@ const Benefit = () => {
                 objectFit="cover"
               />
             </div>
-            <div className="text-right flex items-center p-10 w-2/4">
+            <div className="md:text-right flex items-center p-10 md:w-2/4">
               Empowered by real-time data insights and advanced inventory
               tracking, ProChain helps you stay ahead and focus on what
               matters—delivering value to your customers.

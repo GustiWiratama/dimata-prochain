@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className={`flex fixed w-full justify-between p-5 px-28 text-xl items-center transition-all duration-300 ${
+        className={`flex fixed w-full justify-between p-5 md:px-28 text-xl items-center transition-all duration-300 ${
           isScrolled ? "bg-black bg-opacity-70" : "bg-transparent"
         } text-white`}
       >
@@ -86,7 +86,7 @@ const Navbar = () => {
                 >
                   <Link href="/contact">Contact</Link>
                 </li>
-                <li className="px-4 py-2 flex text-center items-center justify-center bg-amber-500 bg-opacity-70 cursor-pointer">
+                <li className="px-4 py-2 flex text-center items-center justify-center bg-amber-500 bg-opacity-70 rounded cursor-pointer">
                   Login
                 </li>
               </ul>

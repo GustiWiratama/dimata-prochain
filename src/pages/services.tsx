@@ -21,7 +21,7 @@ export default function Services() {
         </div>
 
         <div className="absolute inset-0 z-10 flex justify-center items-center">
-          <h1 className="text-5xl font-semibold text-white mt-10 ">
+          <h1 className="text-3xl md:text-5xl font-semibold text-white mt-10 ">
             PROCHAIN SERVICES
           </h1>
         </div>

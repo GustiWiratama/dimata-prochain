@@ -64,17 +64,17 @@ const Team = () => {
   };
   return (
     <section>
-      <div className="text-left m-48">
-        <div className="flex justify-between">
-          <div>
+      <div className="text-left m-10 md:m-48">
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <hr className="w-24 bg-amber-500 h-1 mb-2" />
             <p className="text-xl text-amber-500">OUR TEAM</p>
             <br />
-            <p className="text-5xl font-normal">
+            <p className=" text-2xl md:text-5xl font-normal">
               <b>The Minds Behind ProChain</b>
             </p>
             <br />
-            <p>
+            <p className="hidden md:block">
               ProChain’s success is powered by a passionate team committed to
               innovation, collaboration, and delivering impactful solutions to
               our clients.
@@ -82,7 +82,7 @@ const Team = () => {
             <br />
           </div>
           {isClient && (
-            <div className="flex mt-4">
+            <div className="flex mt-4 justify-between">
               <button
                 onClick={handlePrev}
                 disabled={currentIndex === 0}

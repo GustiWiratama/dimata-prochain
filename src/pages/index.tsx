@@ -36,14 +36,14 @@ export default function Home() {
   return (
     <div>
       <header
-        className="h-screen bg-cover bg-center"
+        className="h-screen bg-cover bg-center overflow-hidden"
         style={{ backgroundImage: "url('/home/gudang1.png')" }}
       >
         <div className="absolute top-0 left-0 right-0 z-20 nav">
           <Navbar />
         </div>
         <div className="relative flex justify-center items-center h-full">
-          <div className="w-[400px] h-[400px] mr-28 mt-14 overflow-hidden hidden md:flex">
+          <div className="w-[400px] h-[400px] md:mr-28 mt-14 overflow-hidden hidden md:flex">
             <Image
               src="/home/prochain-logo.png"
               alt="service Image"
@@ -55,7 +55,7 @@ export default function Home() {
             />
           </div>
           <div className=" text-white text-center md:text-start">
-            <h1 className="text-4xl font-semibold w-[12em] leading-tight">
+            <h1 className=" text-3xl md:text-4xl font-semibold w-[12em] leading-tight">
               Integrated Process Chain Management System
             </h1>
             <p className="text-lg mt-10 mb-14 italic">
