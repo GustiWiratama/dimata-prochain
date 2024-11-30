@@ -86,9 +86,12 @@ const Navbar = () => {
                 >
                   <Link href="/contact">Contact</Link>
                 </li>
-                <li className="px-4 py-2 flex text-center items-center justify-center bg-amber-500 bg-opacity-70 rounded cursor-pointer">
+                <Link
+                  href="/login"
+                  className="px-4 py-2 flex text-center items-center justify-center bg-amber-500 bg-opacity-70 rounded cursor-pointer"
+                >
                   Login
-                </li>
+                </Link>
               </ul>
             </div>
           )}
@@ -129,9 +132,12 @@ const Navbar = () => {
             >
               <Link href="/contact">Contact</Link>
             </li>
-            <li className="pl-6 pr-6 flex text-center items-center justify-center rounded-full bg-amber-500 h-10 cursor-pointer hover:scale-105 transition duration-100">
+            <Link
+              href="/login"
+              className="pl-6 pr-6 flex text-center items-center justify-center rounded-full bg-amber-500 h-10 cursor-pointer hover:scale-105 transition duration-100"
+            >
               Login
-            </li>
+            </Link>
           </ul>
         </div>
       </nav>
