@@ -12,7 +12,7 @@ const SocialMedia = () => {
           Visit Our Social Media
         </div>
       </div>
-      <div className="flex justify-evenly gap-16">
+      <div className="flex scale-50 md:scale-100 justify-evenly gap-16">
         <a
           href="https://www.instagram.com/dimata_it/?hl=en"
           target="_blank"

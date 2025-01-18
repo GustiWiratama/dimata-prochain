@@ -24,7 +24,7 @@ const Login = () => {
         Login Now!
       </h2>
       <div className="flex">
-        <div className="img w-1/2 mr-10">
+        <div className="img w-1/2 mr-10 hidden md:block">
           <div className="w-96 h-96  overflow-hidden relative ">
             <Image
               src="/login/loginn.svg"
@@ -36,7 +36,7 @@ const Login = () => {
         </div>
         <form
           onSubmit={handleLogin}
-          className="bg-white mx-10 rounded w-1/2 mt-10 max-w-sm space-y-4"
+          className="bg-white mx-10 rounded md:w-1/2 mt-10 max-w-sm space-y-4"
         >
           {error && <p className="text-red-500 text-center">{error}</p>}
 
